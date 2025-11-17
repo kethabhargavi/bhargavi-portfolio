@@ -61,3 +61,25 @@ contactForm?.addEventListener('submit', (e) => {
   alert('✅ Message sent! (This is a demo — wire up a real backend or email service to receive messages.)');
   contactForm.reset();
 });
+
+// Active Nav Highlight on Scroll
+const sections = document.querySelectorAll("section, header");
+const navLinks = document.querySelectorAll(".nav-right li a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+  });
+});
