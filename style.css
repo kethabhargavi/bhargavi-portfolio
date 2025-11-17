@@ -11,6 +11,114 @@
   --blur: 8px;
 }
 
+/* ========== GLOBAL MOBILE FIX ========== */
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+
+/* ========== HERO RESPONSIVE ========== */
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-photo img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+
+/* ========== ABOUT SECTION MOBILE FIX ========== */
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .enhanced-photo img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+/* ========== SKILLS GRID RESPONSIVE ========== */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ========== PROJECT GRID RESPONSIVE ========== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ========== NAVBAR MOBILE FIX ========== */
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;  /* or convert to hamburger menu if you want */
+  }
+}
+
+
 body.light-mode {
   --bg: #f7f8fb;
   --card: #ffffff;
@@ -346,3 +454,4 @@ button[type="submit"]{padding:10px 14px; border-radius:8px; border:none; font-we
   .nav{padding:12px}
   .hero h1{font-size:1.9rem}
 }
+
