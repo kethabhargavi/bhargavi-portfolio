@@ -54,6 +54,53 @@ body{
 }
 .theme-btn:hover{background:var(--accent); color:#000}
 
+/* -------- NAVBAR EFFECTS -------- */
+.nav-right li {
+  list-style: none;
+  position: relative;
+}
+
+.nav-right li a {
+  text-decoration: none;
+  color: var(--text-color, #fff);
+  font-weight: 500;
+  padding: 8px 5px;
+  transition: 0.3s ease;
+}
+
+/* Hover color glow */
+.nav-right li a:hover {
+  color: #00fff5;
+  text-shadow: 0 0 10px #00fff5;
+}
+
+/* Underline animation */
+.nav-right li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #00fff5;
+  transition: 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-right li a:hover::after {
+  width: 100%;
+}
+
+/* Active link highlight */
+.nav-right li a.active {
+  color: #00fff5;
+}
+
+.nav-right li a.active::after {
+  width: 100%;
+}
+
+
 /* HERO */
 .hero{
   min-height:88vh;
