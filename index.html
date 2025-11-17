@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhargavi Ketha — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-left">
+      <div class="logo">Bhargavi<span class="dot">.</span></div>
+    </div>
+    <ul class="nav-right">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button></li>
+    </ul>
+  </nav>
+
+  <!-- ======== HOME / HERO SECTION ======== -->
+<header class="hero" id="home">
+  <div class="hero-inner">
+
+    <div class="hero-left">
+      <h1>Hello, I'm <span class="accent">Bhargavi Ketha</span></h1>
+      <p class="tagline">Creative Web Developer passionate about building modern web experiences.</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn">Explore My Work</a>
+        <a href="https://drive.google.com/file/d/1NeVbk6SvmduKV_ZJKRp4z7ur7vILfNXO/view?usp=drivesdk" 
+           class="btn ghost" 
+           target="_blank" 
+           rel="noopener">Download Resume</a>
+      </div>
+
+    <!-- Social Icons -->
+<div class="social-links">
+  
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/bhargavi-ketha-0aa9b8277" target="_blank" class="social-icon">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+  </a>
+
+  <!-- Gmail -->
+  <a href="mailto:kethabhargavi2004@gmail.com" class="social-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail">
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/kethabhargavi" target="_blank" class="social-icon">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+  </a>
+
+</div>
+    </div>
+
+
+    <!-- 👉 Added profile picture here -->
+    <div class="hero-photo">
+      <img src="mine.jpg" alt="Bhargavi Profile Photo">
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ======== ABOUT SECTION ======== -->
+<section id="about" class="container about reveal">
+  <h2>About Me</h2>
+
+  <div class="about-wrapper">
+    <div class="about-photo enhanced-photo">
+      <img src="mine.jpg" alt="Bhargavi Profile" />
+    </div>
+
+    <p>
+      I'm a fresher web developer who loves crafting beautiful, responsive,
+      and interactive websites using HTML, CSS, and JavaScript. I enjoy building
+      projects that are both functional and delightful to use.
+    </p>
+  </div>
+</section>
+
+<!-- ===== SKILLS SECTION ===== -->
+<section class="skills" id="skills">
+  <h2 class="heading">My <span>Skills</span></h2>
+  <div class="skills-container">
+    
+    <div class="skill-box">
+      <h3>🌐 Web Development</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>ReactJS </li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>☁️ Cloud Computing</h3>
+      <ul>
+        <li>AWS</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>🗄️ Database</h3>
+      <ul>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>⚙️ Backend</h3>
+      <ul>
+        <li>Python (Flask / FastAPI)</li>
+        <li>Node.js</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>💻 Programming Languages</h3>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>🧰 Other Tools</h3>
+      <ul>
+        <li>GitHub</li>
+        <li>VS Code</li>
+        <li>Canva</li>
+        <li>Jupyter</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  
+    <section id="projects" class="container projects reveal">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-body">
+            <h3>Colour_guessing _game</h3>
+            <p>Classic Snake Game built in Python using Turtle graphics.</p>
+            <div class="project-links">
+              <a href="https://github.com/kethabhargavi/snake_game-" class="link">Code</a>
+              <a href="https://kethabhargavi.github.io/colours-game/" class="link">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <h3>ResuScan Pro</h3>
+            <p>AI-powered resume analyzer using NLP and job alignment.</p>
+            <div class="project-links">
+              <a href="#" class="link">Code</a>
+              <a href="#" class="link">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <h3>FallacyFinder</h3>
+            <p>Detects logical fallacies in text using Python and ReactJS.</p>
+            <div class="project-links">
+              <a href="https://github.com/kethabhargavi/logically-fallacy-detect-text" class="link">Code</a>
+              <a href=" https://kethabhargavi.github.io/logically-fallacy-detect-text/" class="link">Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+<section id="certifications" class="container certifications reveal">
+  <h2>Certifications</h2>
+
+  <div class="cert-grid">
+
+    <article class="cert-card">
+      <h3>AWS Cloud Practitioner</h3>
+      <p>Completed fundamentals of cloud computing, IAM, EC2, S3, and cloud architecture.</p>
+      <a href="https://drive.google.com/file/d/1oLnIb6wVRW5sJZPQc879iUvftdrD_HTi/view?usp=drivesdk" class="link" target="_blank">View Certificate</a>
+    </article>
+
+    <article class="cert-card">
+      <h3>Google Data Analytics</h3>
+      <p>Hands-on skills in SQL, spreadsheets, and analytics tools for real-world datasets.</p>
+      <a href="https://drive.google.com/file/d/1Pa5lBtQL2wxXftkuOiriSfrWf_Ng_t9K/view?usp=drivesdk" class="link" target="_blank">View Certificate</a>
+    </article>
+
+    <article class="cert-card">
+      <h3>Full stack Development</h3>
+      <p>Hands-on experience in making website real-time projects </p>
+      <a href="https://drive.google.com/file/d/15qPagmmBWTi4joOXBEuQy-plWXCmOO1r/view?usp=drivesdk" class="link" target="_blank">View Certificate</a>
+    </article>
+
+  </div>
+</section>
+
+    <section id="contact" class="container contact reveal">
+      <h2>Contact Me</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Bhargavi Ketha • Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
